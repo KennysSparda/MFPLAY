@@ -1,0 +1,45 @@
+:root {
+  --color: red;
+  --text: white;
+  --back: black;
+  --box: #252525;
+}
+
+body {
+  color: var(--color);
+  background: black;
+  text-align: center;
+}
+
+img {
+  width: 250px;
+  height: 200px;
+  
+}
+
+.filme {
+  font: 18px arial;
+  text-align: center;
+  height: 600px;
+  width: 280px;
+  margin: 5px;
+  padding: 18px;
+  position: relative;
+  border-width:2px;
+  left:0px;
+  color: var(--text);
+  background-color: var(--box);
+  float: left;
+}
+
+#container:before,
+#container:after {
+    content: "";
+    display: table;
+} 
+#container:after {
+    clear: both;
+}
+#container {
+     zoom: 1; /* For IE 6/7 (trigger hasLayout) */
+}
